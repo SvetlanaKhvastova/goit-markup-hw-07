@@ -1,0 +1,94 @@
+.features {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.features-title.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+.features-point {
+  display: flex;
+  flex-wrap: wrap;
+}
+.features-point-element {
+  flex-wrap: wrap;
+  width: calc((100% - 30px * 3) / 4);
+  margin-right: 30px;
+}
+.features-point-element:nth-child(4n) {
+  margin-right: 0;
+}
+.features-point-element.antenna::before {
+  margin-top: 0;
+  margin-bottom: 30px;
+  display: block;
+  content: "";
+  height: 120px;
+  background-image: url(../images/svg/antenna.svg);
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $secondary-background-color;
+  border-radius: 4px;
+}
+.features-point-element.clock::before {
+  margin-top: 0;
+  margin-bottom: 30px;
+  display: block;
+  content: "";
+  height: 120px;
+  background-image: url(../images/svg/clock.svg);
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $secondary-background-color;
+  border-radius: 4px;
+}
+.features-point-element.diagram::before {
+  margin-top: 0;
+  margin-bottom: 30px;
+  display: block;
+  content: "";
+  height: 120px;
+  background-image: url(../images/svg/diagram.svg);
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $secondary-background-color;
+  border-radius: 4px;
+}
+.features-point-element.astronaut::before {
+  margin-top: 0;
+  margin-bottom: 30px;
+  display: block;
+  content: "";
+  height: 120px;
+  background-image: url(../images/svg/astronaut.svg);
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $secondary-background-color;
+  border-radius: 4px;
+}
+
+.features-list {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  color: $title;
+  text-transform: uppercase;
+}
+.features-text {
+  padding: 0;
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 1.71;
+}

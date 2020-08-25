@@ -1,0 +1,25 @@
+.address {
+  color: $secondary-text-color;
+
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+}
+.address .address-link {
+  display: block;
+  margin-top: 9px;
+  margin-bottom: 0;
+
+  color: $primary-text-color;
+
+  font-size: 14px;
+  line-height: 1.71;
+
+  transition: color $time-hover-focus $time-function;
+}
+.address-link:hover,
+.address-link:focus {
+  color: $accent;
+
+  transition: color $time-hover-focus $time-function;
+}

@@ -1,0 +1,47 @@
+* button */ .portfolio-primary-button {
+  padding-top: 93px;
+  padding-bottom: 34px;
+}
+.portfolio-primary .portfolio-primary-title {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+.button-portfolio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button-portfolio-links:not(:last-child) {
+  margin-right: 8px;
+}
+.button-portfolio.primary {
+  padding: 6px 22px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+
+  color: $title;
+  background-color: #f5f4fa;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+  text-align: center;
+  cursor: pointer;
+
+  transition: color $time-hover-focus $time-function, background-color $time-hover-focus $time-function;
+}
+.button-portfolio.primary:hover,
+.button-portfolio.primary:focus {
+  color: $secondary-text-color;
+  background-color: $accent;
+
+  transition: color $time-hover-focus $time-function, background-color $time-hover-focus $time-function;
+}

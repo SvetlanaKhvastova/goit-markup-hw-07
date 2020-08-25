@@ -1,0 +1,81 @@
+/* form */
+.fotter-form {
+  display: block;
+}
+.fotter-area {
+  display: flex;
+}
+.fotter-email {
+  position: relative;
+  margin-right: 12px;
+}
+/* .fotter-label {
+  position: absolute;
+
+  padding: 0;
+  top: 0;
+  left: 0;
+  margin: 15px 0 15px 16px;
+} */
+.fotter-input {
+  margin: 0;
+  padding: 15px 0 15px 16px;
+
+  width: 358px;
+  height: 50px;
+
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+
+  align-items: center;
+
+  color: rgba(255, 255, 255, 0.6);
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: inherit;
+
+  transition: border $time-hover-focus $time-function;
+}
+.fotter-input:hover,
+.fotter-input:focus {
+  border: 1px solid $accent;
+  outline: $accent;
+}
+.fotter-submit {
+  padding: 0;
+  margin: 0;
+
+  width: 200px;
+  height: 50px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: #ffffff;
+
+  background-color: $accent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 1px solid $accent;
+
+  transition: border $time-hover-focus $time-function;
+}
+.fotter-submit:hover,
+.fotter-submit:focus {
+  border: 1px solid $accent;
+  cursor: pointer;
+}
+
+.fotter-submit-poin {
+  vertical-align: middle;
+  fill: $primary-background-color;
+}

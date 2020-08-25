@@ -1,0 +1,17 @@
+.footer {
+  background-color: #2f303a;
+}
+.footer-flex {
+  display: flex;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-flex > :not(:last-child) {
+  align-items: baseline;
+  width: calc((50% - 45px) / 2);
+  margin-right: 30px;
+}
+.footer-flex > div:last-child {
+  align-items: baseline;
+  width: calc(50% - 15px);
+}
