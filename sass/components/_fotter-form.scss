@@ -1,22 +1,16 @@
-/* form */
 .fotter-form {
   display: block;
 }
+
 .fotter-area {
   display: flex;
 }
+
 .fotter-email {
   position: relative;
   margin-right: 12px;
 }
-/* .fotter-label {
-  position: absolute;
 
-  padding: 0;
-  top: 0;
-  left: 0;
-  margin: 15px 0 15px 16px;
-} */
 .fotter-input {
   margin: 0;
   padding: 15px 0 15px 16px;
@@ -39,12 +33,14 @@
   background-color: inherit;
 
   transition: border $time-hover-focus $time-function;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $accent;
+    outline: $accent;
+  }
 }
-.fotter-input:hover,
-.fotter-input:focus {
-  border: 1px solid $accent;
-  outline: $accent;
-}
+
 .fotter-submit {
   padding: 0;
   margin: 0;
@@ -68,11 +64,12 @@
   border: 1px solid $accent;
 
   transition: border $time-hover-focus $time-function;
-}
-.fotter-submit:hover,
-.fotter-submit:focus {
-  border: 1px solid $accent;
-  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $accent;
+    cursor: pointer;
+  }
 }
 
 .fotter-submit-poin {

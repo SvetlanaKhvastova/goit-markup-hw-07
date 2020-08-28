@@ -1,8 +1,9 @@
-* button */ .portfolio-primary-button {
+.portfolio-primary-button {
   padding-top: 93px;
   padding-bottom: 34px;
 }
-.portfolio-primary .portfolio-primary-title {
+
+.portfolio-primary-title {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
   /* IE6, IE7 */
@@ -13,14 +14,17 @@
   width: 1px !important;
   overflow: hidden;
 }
+
 .button-portfolio {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .button-portfolio-links:not(:last-child) {
   margin-right: 8px;
 }
+
 .button-portfolio.primary {
   padding: 6px 22px;
   border-radius: 4px;
@@ -36,12 +40,15 @@
   text-align: center;
   cursor: pointer;
 
-  transition: color $time-hover-focus $time-function, background-color $time-hover-focus $time-function;
-}
-.button-portfolio.primary:hover,
-.button-portfolio.primary:focus {
-  color: $secondary-text-color;
-  background-color: $accent;
+  transition: color $time-hover-focus $time-function,
+    background-color $time-hover-focus $time-function;
 
-  transition: color $time-hover-focus $time-function, background-color $time-hover-focus $time-function;
+  &:hover,
+  &:focus {
+    color: $secondary-text-color;
+    background-color: $accent;
+
+    transition: color $time-hover-focus $time-function,
+      background-color $time-hover-focus $time-function;
+  }
 }

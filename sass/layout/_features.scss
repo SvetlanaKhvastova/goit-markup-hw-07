@@ -2,6 +2,7 @@
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
 .features-title.visually-hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
@@ -13,18 +14,22 @@
   width: 1px !important;
   overflow: hidden;
 }
+
 .features-point {
   display: flex;
   flex-wrap: wrap;
 }
+
 .features-point-element {
   flex-wrap: wrap;
   width: calc((100% - 30px * 3) / 4);
   margin-right: 30px;
+
+  &:nth-child(4n) {
+    margin-right: 0;
+  }
 }
-.features-point-element:nth-child(4n) {
-  margin-right: 0;
-}
+
 .features-point-element.antenna::before {
   margin-top: 0;
   margin-bottom: 30px;
@@ -38,6 +43,7 @@
   background-color: $secondary-background-color;
   border-radius: 4px;
 }
+
 .features-point-element.clock::before {
   margin-top: 0;
   margin-bottom: 30px;
@@ -51,6 +57,7 @@
   background-color: $secondary-background-color;
   border-radius: 4px;
 }
+
 .features-point-element.diagram::before {
   margin-top: 0;
   margin-bottom: 30px;
@@ -64,6 +71,7 @@
   background-color: $secondary-background-color;
   border-radius: 4px;
 }
+
 .features-point-element.astronaut::before {
   margin-top: 0;
   margin-bottom: 30px;
@@ -85,6 +93,7 @@
   color: $title;
   text-transform: uppercase;
 }
+
 .features-text {
   padding: 0;
   margin: 0;

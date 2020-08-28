@@ -5,7 +5,8 @@
   font-size: 14px;
   line-height: 1.71;
 }
-.address .address-link {
+
+.address-link {
   display: block;
   margin-top: 9px;
   margin-bottom: 0;
@@ -16,10 +17,11 @@
   line-height: 1.71;
 
   transition: color $time-hover-focus $time-function;
-}
-.address-link:hover,
-.address-link:focus {
-  color: $accent;
 
-  transition: color $time-hover-focus $time-function;
+  &:hover,
+  &:focus {
+    color: $accent;
+
+    transition: color $time-hover-focus $time-function;
+  }
 }

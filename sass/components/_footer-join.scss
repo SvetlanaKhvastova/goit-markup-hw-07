@@ -1,4 +1,4 @@
-.footer .footer-title {
+.footer-title {
   display: inline-flex;
   margin-bottom: 20px;
   color: $secondary-text-color;
@@ -8,9 +8,11 @@
 .join {
   display: flex;
 }
+
 .join-link:not(:last-child) {
   margin-right: 10px;
 }
+
 .footer-title-link {
   display: inline-flex;
   align-items: center;
@@ -21,12 +23,13 @@
   background-color: rgba(255, 255, 255, 0.1);
 
   transition: background-color $time-hover-focus $time-function;
-}
-.footer .footer-title-link:hover,
-.footer .footer-title-link:focus {
-  background-color: $accent;
 
-  transition: background-color $time-hover-focus $time-function;
+  &:hover,
+  &:focus {
+    background-color: $accent;
+
+    transition: background-color $time-hover-focus $time-function;
+  }
 }
 
 .join-network {

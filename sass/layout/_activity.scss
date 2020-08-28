@@ -2,6 +2,7 @@
   padding-top: 0;
   padding-bottom: 94px;
 }
+
 .activity-title {
   margin-top: 0;
   margin-bottom: 50px;
@@ -11,25 +12,30 @@
   line-height: 1.17;
   text-align: center;
 }
+
 .activity-point {
   display: flex;
   flex-wrap: wrap;
 }
+
 .activity-element {
   position: relative;
   flex-wrap: wrap;
   width: calc((100% - 30px * 2) / 3);
   margin-right: 30px;
+
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
 }
-.activity-element:nth-child(3n) {
-  margin-right: 0;
-}
+
 .activity-images {
   display: block;
   margin: 0;
   padding: 0;
 }
-.activity .activity-title-list {
+
+.activity-title-list {
   position: absolute;
   bottom: 0;
   margin: 0;
