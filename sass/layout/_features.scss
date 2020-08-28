@@ -4,15 +4,7 @@
 }
 
 .features-title.visually-hidden {
-  position: absolute !important;
-  clip: rect(1px 1px 1px 1px);
-  /* IE6, IE7 */
-  clip: rect(1px, 1px, 1px, 1px);
-  padding: 0 !important;
-  border: 0 !important;
-  height: 1px !important;
-  width: 1px !important;
-  overflow: hidden;
+  @extend %hidden;
 }
 
 .features-point {
@@ -30,7 +22,7 @@
   }
 }
 
-.features-point-element.antenna::before {
+.antenna::before {
   margin-top: 0;
   margin-bottom: 30px;
   display: block;
@@ -44,7 +36,7 @@
   border-radius: 4px;
 }
 
-.features-point-element.clock::before {
+.clock::before {
   margin-top: 0;
   margin-bottom: 30px;
   display: block;
@@ -58,7 +50,7 @@
   border-radius: 4px;
 }
 
-.features-point-element.diagram::before {
+.diagram::before {
   margin-top: 0;
   margin-bottom: 30px;
   display: block;
@@ -72,7 +64,7 @@
   border-radius: 4px;
 }
 
-.features-point-element.astronaut::before {
+.astronaut::before {
   margin-top: 0;
   margin-bottom: 30px;
   display: block;

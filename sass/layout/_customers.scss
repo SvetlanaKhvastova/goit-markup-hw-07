@@ -50,13 +50,13 @@
 
     transition: border $time-hover-focus $time-function;
   }
-}
 
-.customers-link:hover .customers-logo,
-.customers-link:focus .customers-logo {
-  fill: $accent;
+  &:hover .customers-logo,
+  &:focus .customers-logo {
+    fill: $accent;
 
-  transition: fill $time-hover-focus $time-function;
+    transition: fill $time-hover-focus $time-function;
+  }
 }
 
 .customers-logo {

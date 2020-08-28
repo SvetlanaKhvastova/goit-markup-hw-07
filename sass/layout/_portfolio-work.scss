@@ -35,6 +35,14 @@
 
 .portfolio-link {
   color: $primary-text-color;
+
+  &:hover .portfolio-text,
+  &:focus .portfolio-text {
+    opacity: 1;
+    overflow: visible;
+    transform: translateY(0);
+    transition: transform $time-hover-focus $time-function;
+  }
 }
 
 .portfolio-content {
@@ -88,12 +96,4 @@
   line-height: 1.56;
 
   color: $secondary-text-color;
-}
-
-.portfolio-link:hover .portfolio-text,
-.portfolio-link:focus .portfolio-text {
-  opacity: 1;
-  overflow: visible;
-  transform: translateY(0);
-  transition: transform $time-hover-focus $time-function;
 }

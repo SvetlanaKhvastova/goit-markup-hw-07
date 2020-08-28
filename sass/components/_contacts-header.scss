@@ -25,12 +25,12 @@
     color: $accent;
     transition: color $time-hover-focus $time-function;
   }
-}
 
-.contacts-link:hover .contacts-images,
-.contacts-link:focus .contacts-images {
-  fill: $accent;
-  transition: fill $time-hover-focus $time-function;
+  &:hover .contacts-images,
+  &:focus .contacts-images {
+    fill: $accent;
+    transition: fill $time-hover-focus $time-function;
+  }
 }
 
 .envelope {
